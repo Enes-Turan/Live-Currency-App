@@ -1,0 +1,26 @@
+﻿@model LiveCurrencyApp.Models.CurrencyData
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+else
+{
+    <h2>@Model.Base_code Exchange Rates</h2>
+
+    <table class="table table-bordered">
+        <tr><th>Currency</th><th>Rate</th></tr>
+
+        @foreach (var rate in Model.Rates)
+        {
+            <tr>
+                <td>@rate.Key</td>
+                <td>@rate.Value</td>
+            </tr>
+        }
+    </table>
+}
+
+<script>setInterval(function () {
+        location.reload();
+    }, 10000);</script>
