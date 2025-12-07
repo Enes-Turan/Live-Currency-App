@@ -1,0 +1,26 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# ASP.NET temp files
+*.dbmdl
+*.jfm
+
+# Sensitive configuration
+appsettings.json
+appsettings.Development.json
+
+# Logs
+*.log
+
+# EF
+Migrations/
